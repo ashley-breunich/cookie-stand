@@ -5,8 +5,8 @@ var pike = {
   minCustomer: 23,
   maxCustomer: 65,
   avgCookieSale: 6.3,
-  open: 8,
-  close: 6,
+  open: 6,
+  close: 8,
   getRandom: function(minCustomer, maxCustomer) {
     return Math.random() * (maxCustomer - minCustomer) + minCustomer;
   },
@@ -14,15 +14,15 @@ var pike = {
 
 pike.getRandom(pike.minCustomer, pike.maxCustomer);
 
-function numCookies(){
-  var simCookies = pike.avgCookieSale * pike.getRandom;
-  console.log(simCookies);
+// Function for Calculating Cookies by Hour
+function cookiesByHour(){
+  for(var i = 0; i < 14; i++){
+    var numCookies = pike.avgCookieSale * Math.round(pike.getRandom);
+    console.log(numCookies);
+  }
 }
 
-numCookies();
-
-for(var i = 0; i < 8; i++){
-}
+cookiesByHour();
 
 // SEATAC Airport Location
 var seaTac = {
