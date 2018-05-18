@@ -5,6 +5,8 @@ var pike = {
   minCustomer: 23,
   maxCustomer: 65,
   avgCookieSale: 6.3,
+  open: 8,
+  close: 6,
   getRandom: function(minCustomer, maxCustomer) {
     return Math.random() * (maxCustomer - minCustomer) + minCustomer;
   },
@@ -12,11 +14,23 @@ var pike = {
 
 pike.getRandom(pike.minCustomer, pike.maxCustomer);
 
+function numCookies(){
+  var simCookies = pike.avgCookieSale * pike.getRandom;
+  console.log(simCookies);
+}
+
+numCookies();
+
+for(var i = 0; i < 8; i++){
+}
+
 // SEATAC Airport Location
 var seaTac = {
   minCustomer: 3,
   maxCustomer: 24,
   avgCookieSale: 1.2,
+  open: 8,
+  close: 6,
   getRandom: function(minCustomer, maxCustomer) {
     return Math.random() * (maxCustomer - minCustomer) + minCustomer;
   },
@@ -29,6 +43,8 @@ var seattleCenter = {
   minCustomer: 11,
   maxCustomer: 38,
   avgCookieSale: 3.7,
+  open: 8,
+  close: 6,
   getRandom: function(minCustomer, maxCustomer) {
     return Math.random() * (maxCustomer - minCustomer) + minCustomer;
   },
@@ -41,6 +57,8 @@ var capHill = {
   minCustomer: 20,
   maxCustomer: 38,
   avgCookieSale: 2.3,
+  open: 8,
+  close: 6,
   getRandom: function(minCustomer, maxCustomer) {
     return Math.random() * (maxCustomer - minCustomer) + minCustomer;
   },
@@ -53,6 +71,8 @@ var alki = {
   minCustomer: 2,
   maxCustomer: 16,
   avgCookieSale: 4.6,
+  open: 8,
+  close: 6,
   getRandom: function(minCustomer, maxCustomer) {
     return Math.random() * (maxCustomer - minCustomer) + minCustomer;
   },
