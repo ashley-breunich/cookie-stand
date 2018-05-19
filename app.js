@@ -20,16 +20,18 @@ function cookiesByHourPike(){
   for(var i = 0; i < pike.hoursOfOperation.length; i++){
     var randomHourlyNumber = Math.round(pike.getRandom(pike.minCustomer, pike.maxCustomer) * pike.avgCookieSale);
     pike.hourlySales.push(randomHourlyNumber);
-    // pike.totalDailySales = pike.totalDailySales + pike.hourlySales;
-    // console.log(pike.totalDailySales);
+    pike.totalDailySales += pike.hourlySales[i];
     var newEl = document.createElement('li');
     var newText = document.createTextNode(pike.hoursOfOperation[i] + pike.hourlySales[i] + ' cookies');
     newEl.appendChild(newText);
     var position = document.getElementById('pike-list');
     position.appendChild(newEl);
   }
-  //pike.totalDailySales = 'Total Daily Sales: ' + pike.totalDailySales;
-  //console.log(pike.totalDailySales);
+
+  // Total Number of Cookies - Pike Location
+  var totalSalesPike = document.getElementById('pike-total');
+  var itemContent = totalSalesPike.innerHTML;
+  totalSalesPike.innerHTML = itemContent + pike.totalDailySales;
 }
 cookiesByHourPike();
 
