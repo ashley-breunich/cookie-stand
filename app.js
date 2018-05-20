@@ -40,8 +40,7 @@ var seaTac = {
   minCustomer: 3,
   maxCustomer: 24,
   avgCookieSale: 1.2,
-  open: 8,
-  close: 6,
+  totalDailySales: 0,
   hoursOfOperation: ['6am: ', '7am: ', '8am: ', '9am: ', '10am: ', '11am: ', '12pm: ', '1pm: ', '2pm: ', '3pm: ', '4pm: ', '5pm: ', '6pm: ', '7pm: ', '8pm: '],
   hourlySales: [],
   getRandom: function(minCustomer, maxCustomer) {
@@ -56,12 +55,18 @@ function cookiesByHourSeaTac(){
   for(var i = 0; i < seaTac.hoursOfOperation.length; i++){
     var randomHourlyNumber = Math.round(seaTac.getRandom(seaTac.minCustomer, seaTac.maxCustomer) * seaTac.avgCookieSale);
     seaTac.hourlySales.push(randomHourlyNumber);
+    seaTac.totalDailySales += seaTac.hourlySales[i];
     var newEl = document.createElement('li');
     var newText = document.createTextNode(seaTac.hoursOfOperation[i] + seaTac.hourlySales[i] + ' cookies');
     newEl.appendChild(newText);
     var position = document.getElementById('seatac-list');
     position.appendChild(newEl);
   }
+
+  // Total Number of Cookies - SeaTac Location
+  var totalSalesSeaTac = document.getElementById('seatac-total');
+  var itemContent = totalSalesSeaTac.innerHTML;
+  totalSalesSeaTac.innerHTML = itemContent + seaTac.totalDailySales;
 }
 cookiesByHourSeaTac();
 
@@ -70,8 +75,7 @@ var seattleCenter = {
   minCustomer: 11,
   maxCustomer: 38,
   avgCookieSale: 3.7,
-  open: 8,
-  close: 6,
+  totalDailySales: 0,
   hoursOfOperation: ['6am: ', '7am: ', '8am: ', '9am: ', '10am: ', '11am: ', '12pm: ', '1pm: ', '2pm: ', '3pm: ', '4pm: ', '5pm: ', '6pm: ', '7pm: ', '8pm: '],
   hourlySales: [],
   getRandom: function(minCustomer, maxCustomer) {
@@ -86,12 +90,18 @@ function cookiesByHourSeattleCenter(){
   for(var i = 0; i < seattleCenter.hoursOfOperation.length; i++){
     var randomHourlyNumber = Math.round(seattleCenter.getRandom(seattleCenter.minCustomer, seattleCenter.maxCustomer) * seattleCenter.avgCookieSale);
     seattleCenter.hourlySales.push(randomHourlyNumber);
+    seattleCenter.totalDailySales += seattleCenter.hourlySales[i];
     var newEl = document.createElement('li');
     var newText = document.createTextNode(seattleCenter.hoursOfOperation[i] + seattleCenter.hourlySales[i] + ' cookies');
     newEl.appendChild(newText);
     var position = document.getElementById('seattle-center-list');
     position.appendChild(newEl);
   }
+
+  // Total Number of Cookies - Seattle Center Location
+  var totalSalesSeattleCenter = document.getElementById('seattle-center-total');
+  var itemContent = totalSalesSeattleCenter.innerHTML;
+  totalSalesSeattleCenter.innerHTML = itemContent + seattleCenter.totalDailySales;
 }
 cookiesByHourSeattleCenter();
 
@@ -100,8 +110,7 @@ var capHill = {
   minCustomer: 20,
   maxCustomer: 38,
   avgCookieSale: 2.3,
-  open: 8,
-  close: 6,
+  totalDailySales: 0,
   hoursOfOperation: ['6am: ', '7am: ', '8am: ', '9am: ', '10am: ', '11am: ', '12pm: ', '1pm: ', '2pm: ', '3pm: ', '4pm: ', '5pm: ', '6pm: ', '7pm: ', '8pm: '],
   hourlySales: [],
   getRandom: function(minCustomer, maxCustomer) {
@@ -116,12 +125,18 @@ function cookiesByHourCapHill(){
   for(var i = 0; i < capHill.hoursOfOperation.length; i++){
     var randomHourlyNumber = Math.round(capHill.getRandom(capHill.minCustomer, capHill.maxCustomer) * capHill.avgCookieSale);
     capHill.hourlySales.push(randomHourlyNumber);
+    capHill.totalDailySales += capHill.hourlySales[i];
     var newEl = document.createElement('li');
     var newText = document.createTextNode(capHill.hoursOfOperation[i] + capHill.hourlySales[i] + ' cookies');
     newEl.appendChild(newText);
     var position = document.getElementById('caphill-list');
     position.appendChild(newEl);
   }
+
+  // Total Number of Cookies - Capitol Hill Location
+  var totalSalesCapHill = document.getElementById('caphill-total');
+  var itemContent = totalSalesCapHill.innerHTML;
+  totalSalesCapHill.innerHTML = itemContent + capHill.totalDailySales;
 }
 cookiesByHourCapHill();
 
@@ -130,8 +145,7 @@ var alki = {
   minCustomer: 2,
   maxCustomer: 16,
   avgCookieSale: 4.6,
-  open: 8,
-  close: 6,
+  totalDailySales: 0,
   hoursOfOperation: ['6am: ', '7am: ', '8am: ', '9am: ', '10am: ', '11am: ', '12pm: ', '1pm: ', '2pm: ', '3pm: ', '4pm: ', '5pm: ', '6pm: ', '7pm: ', '8pm: '],
   hourlySales: [],
   getRandom: function(minCustomer, maxCustomer) {
@@ -144,12 +158,18 @@ function cookiesByHourAlki(){
   for(var i = 0; i < alki.hoursOfOperation.length; i++){
     var randomHourlyNumber = Math.round(alki.getRandom(alki.minCustomer, alki.maxCustomer) * alki.avgCookieSale);
     alki.hourlySales.push(randomHourlyNumber);
+    alki.totalDailySales += alki.hourlySales[i];
     var newEl = document.createElement('li');
     var newText = document.createTextNode(alki.hoursOfOperation[i] + alki.hourlySales[i] + ' cookies');
     newEl.appendChild(newText);
     var position = document.getElementById('alki-list');
     position.appendChild(newEl);
   }
+
+  // Total Number of Cookies - Alki Location
+  var totalSalesAlki = document.getElementById('alki-total');
+  var itemContent = totalSalesAlki.innerHTML;
+  totalSalesAlki.innerHTML = itemContent + alki.totalDailySales;
 }
 cookiesByHourAlki();
 
