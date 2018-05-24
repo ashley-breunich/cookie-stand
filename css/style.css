@@ -1,0 +1,8 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+th, td {
+    border: .5px solid #666666;
+    font-size: 14px;
+ }
