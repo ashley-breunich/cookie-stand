@@ -51,7 +51,7 @@ function header(){
     theadEl.appendChild(thEl); // link the two up - header to head
   }
   thEl = document.createElement('th'); // create header row outside of loop
-  thEl.textContent = 'Daily Location Total'; // add '' to text content
+  thEl.textContent = 'Daily Total'; // add '' to text content
   theadEl.appendChild(thEl); // link the two up - header to row
 }
 
