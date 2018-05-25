@@ -52,6 +52,9 @@ MakeShopLocation.prototype.header = function(){
     trEl.appendChild(thEl); // link the two up - header to row
     cookiestands.appendChild(trEl); // link the two up - row to chart
   }
+  thEl = document.createElement('th'); // create header row outside of loop
+  thEl.textContent = 'Daily Location Total';
+  trEl.appendChild(thEl);
 };
 
 MakeShopLocation.prototype.header();
