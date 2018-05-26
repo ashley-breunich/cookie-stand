@@ -8,7 +8,7 @@ h2 {
     font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2.5px;
     font-size: 22px;
     font-weight: 400;
     margin-bottom: 15px;
@@ -40,8 +40,8 @@ thead {
 
 th, td {
     border: 2px solid #fafafa;
-    font-size: 14px;
-    padding: 12px 10px 10px 10px;
+    font-size: 15px;
+    padding: 11px 10px 11px 10px;
  }
 
  th {
@@ -64,6 +64,10 @@ td:hover {
 
 th:first-child {
     width: 150px;
+}
+
+th:last-child {
+    width: 100px;
 }
 
 fieldset {
@@ -108,7 +112,7 @@ legend {
     padding: 12px 17px 12px 17px;
     font-size: 11px;
     font-weight: 600;
-    letter-spacing: 2.5px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     border: 2px solid #a84934;
 }
