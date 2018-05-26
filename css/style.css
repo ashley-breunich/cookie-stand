@@ -17,16 +17,17 @@ img.centered {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     width: 400px;
 }
 
 table {
-    width: 80%;
+    width: 90%;
     border-collapse: collapse;
     border: 2px solid #fafafa;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
 }
 
 thead {
@@ -35,10 +36,9 @@ thead {
 }
 
 th, td {
-    font-size: 14px;
-    padding: 8px;
     border: 2px solid #fafafa;
-    font-size: 13px;
+    font-size: 14px;
+    padding: 12px 10px 10px 10px;
  }
 
  th {
@@ -52,19 +52,19 @@ th, td {
     text-align: center;
  }
 
-td:first-child{
-    width: 200px;
-}
-
 td:hover {
     background-color: #a84934;
     color: #fafafa;
 }
 
+th:first-child {
+    width: 150px;
+}
+
 fieldset {
     width: 400px;
-    border: .5px solid #364331;
-    padding: 20px;
+    border: 1px solid #364331;
+    padding: 25px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -77,5 +77,32 @@ legend {
     color: #fafafa;
     text-transform: uppercase;
     letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.title {
+    float: left;
+    width: 160px;
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     font-size: 12px;
+    padding-right: 10px;
+}
+
+.input {
+    width: 180px;
+}
+
+.submit {
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border: 2px solid #a84934;
+}
+
+.submit:hover {
+    border: 2px solid #C98856;
 }
