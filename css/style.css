@@ -1,15 +1,16 @@
 * {   
-    font-family: 'Source Sans Pro', sans-serif;
     background-color: #fafafa;
     margin-top: 10px;
     color: #364331;
 }
 
 h2 {
+    font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 3px;
-    font-size: 18px;
+    font-size: 22px;
+    font-weight: 400;
     margin-bottom: 15px;
 }
 
@@ -17,17 +18,19 @@ img.centered {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 15px;
     margin-bottom: 30px;
-    width: 400px;
+    width: 350px;
 }
 
 table {
+    font-family: 'Source Sans Pro', sans-serif;
     width: 90%;
     border-collapse: collapse;
     border: 2px solid #fafafa;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 thead {
@@ -43,7 +46,9 @@ th, td {
 
  th {
     background-color: #C98856;
-    letter-spacing: .5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     color: #fafafa;
  }
 
@@ -62,16 +67,18 @@ th:first-child {
 }
 
 fieldset {
-    width: 400px;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 300px;
     border: 1px solid #364331;
-    padding: 25px;
+    padding: 30px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 legend {
+    font-family: 'Source Sans Pro', sans-serif;
     background-color: #a84934;
     padding: 10px 20px;
     color: #fafafa;
@@ -81,9 +88,8 @@ legend {
 }
 
 .title {
-    float: left;
-    width: 160px;
-    text-align: right;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 150px;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 12px;
@@ -91,18 +97,23 @@ legend {
 }
 
 .input {
-    width: 180px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 4px;
+    margin-bottom: 8px;
 }
 
 .submit {
+    font-family: 'Source Sans Pro', sans-serif;
     margin-top: 20px;
-    padding: 12px;
+    padding: 12px 17px 12px 17px;
     font-size: 11px;
-    letter-spacing: 3px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
     text-transform: uppercase;
     border: 2px solid #a84934;
 }
 
 .submit:hover {
+    font-family: 'Source Sans Pro', sans-serif;
     border: 2px solid #C98856;
 }
