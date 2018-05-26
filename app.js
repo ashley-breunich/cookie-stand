@@ -3,19 +3,18 @@
 var hoursOfOperation = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
 
 var allLocations = [];
-
+var totalCookiesByHour = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 var cookieStands = document.getElementById('cookiestands');
 var storeForm = document.getElementById('store-form');
+//var totalDailySales = 0;
 
-// var totalCookiesByHour = 0;
-// var totalDailySales = 0;
+
 
 function MakeShopLocation(name, minCustomer, maxCustomer, avgCookies){
   this.name = name;
   this.minCustomer = minCustomer;
   this.maxCustomer = maxCustomer;
   this.avgCookies = avgCookies;
-  this.randCustByHour = [];
   this.cookiesSoldPerHour = [];
   this.totalCookies = 0;
   allLocations.push(this);
@@ -31,6 +30,7 @@ MakeShopLocation.prototype.cookiesByHour = function() {
   for (var i = 0; i < hoursOfOperation.length; i++) {
     var randomHourlyNumber = Math.round(this.getRandom(this.minCustomer, this.maxCustomer) * this.avgCookies);
     this.cookiesSoldPerHour.push(randomHourlyNumber);
+    totalCookiesByHour[i] += this.cookiesSoldPerHour[i];
     this.totalCookies += this.cookiesSoldPerHour[i];
   }
 };
@@ -81,6 +81,7 @@ MakeShopLocation.prototype.renderRow = function(){
   trEl.appendChild(tdEl); // link the two - data cell to row
 };
 
+// render all location rows
 function renderLocationRows() {
   for (var i = 0; i < allLocations.length; i++) {
     allLocations[i].renderRow();
@@ -91,12 +92,17 @@ renderLocationRows();
 //Creating footer row
 function footer(){
   //totalTotal = 0;
-  cookieStands;
-  var tfootEl = document.createElement('tfoot');
-  cookieStands.appendChild(tfootEl);
-  var thEl = document.createElement('th');
-  thEl.textcontent = 'Daily Total';
-  tfootEl.appendChild(thEl);
+  cookieStands; // find cookieStands ID
+  var tfootEl = document.createElement('tfoot'); // create tfoot element
+  cookieStands.appendChild(tfootEl); // link the two = tfoot to table
+  var thEl = document.createElement('th'); // create header element
+  thEl.textContent = 'Daily Total'; // add Daily Total text to the header element
+  tfootEl.appendChild(thEl); // link the two = header element to tfoot
+  for (var i = 0; i < hoursOfOperation.length; i++){ // loop through
+    var tdEl = document.createElement('td'); // create a data cell called tdEl
+    tdEl.textContent = totalCookiesByHour[i]; // add cookie sold by hour to cell
+    tfootEl.appendChild(tdEl); // link the two - data cell to row
+  }
 }
 footer();
 
