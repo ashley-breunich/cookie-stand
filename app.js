@@ -123,11 +123,11 @@ function handleAdditionalStore(event) {
   var newStoreMaxCustomer = parseInt(event.target.maxcustomer.value);
   var newStoreAvgCookie = parseInt(event.target.avgcookie.value);
 
-  new MakeShopLocation(newStoreName, newStoreMinCustomer, newStoreMaxCustomer, newStoreAvgCookie);
+  var addNewStore = new MakeShopLocation(newStoreName, newStoreMinCustomer, newStoreMaxCustomer, newStoreAvgCookie);
 
   clearFields(event);
 
-  renderLocationRows();
+  addNewStore.renderRow();
 }
 
 storeForm.addEventListener('submit', handleAdditionalStore);
