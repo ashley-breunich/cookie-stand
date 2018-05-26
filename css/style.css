@@ -30,15 +30,15 @@ th, td {
  }
 
  th {
-    background-color: #FFBD81;
+    background-color: #FF9877;
  }
 
  td {
-    background-color: #FFE4CD;
+    background-color: #FFB5A2;
     text-align: center;
  }
 
 td:hover {
-    background-color: #7F5143;
+    background-color: #B28C82;
     color: #ffffff;
 }

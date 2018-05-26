@@ -24,8 +24,8 @@ function MakeShopLocation(name, minCustomer, maxCustomer, avgCookies){
 MakeShopLocation.prototype.cookiesByHour = function() {
   for (var i = 0; i < hoursOfOperation.length; i++) {
     var randomHourlyNumber = Math.round(this.getRandom(this.minCustomer, this.maxCustomer) * this.avgCookies);
-    this.totalCookies += this.cookiesSoldPerHour[i];
     this.cookiesSoldPerHour.push(randomHourlyNumber);
+    this.totalCookies += this.cookiesSoldPerHour[i];
   }
 };
 
