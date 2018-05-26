@@ -1,44 +1,123 @@
-* {
-    font-family: 'Roboto Slab', serif;
+* {   
     background-color: #fafafa;
-    margin-top: 30px;
-    color: #3d3d3d;
-    font-size: 80%
+    margin-top: 10px;
+    color: #364331;
 }
 
 h2 {
+    font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 26px;
+    letter-spacing: 2.5px;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 15px;
 }
+
+img.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    width: 350px;
+}
+
 table {
-    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 90%;
     border-collapse: collapse;
-    border: 3px solid #fafafa;
+    border: 2px solid #fafafa;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
 }
 
 thead {
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: .5px;
+    font-size: 13px;
 }
 
 th, td {
-    font-size: 14px;
-    padding: 7px 10px 10px 10px;
-    border: 3px solid #fafafa;
+    border: 2px solid #fafafa;
+    font-size: 15px;
+    padding: 11px 10px 11px 10px;
  }
 
  th {
-    background-color: #FF9877;
+    background-color: #C98856;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fafafa;
  }
 
  td {
-    background-color: #FFB5A2;
+    background-color: #e8b776;
     text-align: center;
  }
 
 td:hover {
-    background-color: #B28C82;
-    color: #ffffff;
+    background-color: #a84934;
+    color: #fafafa;
+}
+
+th:first-child {
+    width: 150px;
+}
+
+th:last-child {
+    width: 100px;
+}
+
+fieldset {
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 300px;
+    border: 1px solid #364331;
+    padding: 30px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+legend {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #a84934;
+    padding: 10px 20px;
+    color: #fafafa;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.title {
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 150px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    padding-right: 10px;
+}
+
+.input {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+.submit {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 20px;
+    padding: 12px 17px 12px 17px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 2px solid #a84934;
+}
+
+.submit:hover {
+    font-family: 'Source Sans Pro', sans-serif;
+    border: 2px solid #C98856;
 }

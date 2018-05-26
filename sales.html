@@ -1,11 +1,49 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Daily Sales Projections</title>
+        <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+        <title>Daily Sales Projections</title>
     </head>
     <body>
+        <p>
+            <figure>
+                <img src="images/salmoncookies-logo.png" alt="salmon cookies logo" class="centered">
+            </figure>
+        </p>
+        <form id="store-form">
+            <fieldset>
+                <legend>Create A New Store</legend>
+                <div class="form">
+                    <label for="storename" class="title">Name of Location:</label>
+                </div>
+                <div>
+                    <input name="storename" type="text" class="input"/>
+                </div>
+                <div class="form">
+                    <label for="mincustomer" class="title">Min Cust/Hour:</label>
+                </div>
+                <div>
+                    <input name="mincustomer" type="text" class="input"/>
+                </div>
+                <div class="form">
+                    <label for="maxcustomer" class="title">Max Cust/Hour:</label>
+                </div>
+                <div>
+                    <input name="maxcustomer" type="text" class="input"/>
+                </div>
+                <div class="form">
+                    <label for="avgcookie" class="title">Avg Cookies/Sale:</label>
+                </div>
+                <div>
+                    <input name="avgcookie" type="text" class="input"/>
+                </div>
+                <div class="form">
+                    <button type="submit" class="submit">Add to Table</button>
+                </div>                
+            </fieldset>
+        </form>
         <h2>Daily Sales Projections</h2>
         <table id="cookiestands"></table>
         <script type="text/javascript" src="app.js"></script>
