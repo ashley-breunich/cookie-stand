@@ -6,9 +6,7 @@ var allLocations = [];
 var totalCookiesByHour = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 var cookieStands = document.getElementById('cookiestands');
 var storeForm = document.getElementById('store-form');
-//var totalDailySales = 0;
-
-
+var totalDailySales = 0;
 
 function MakeShopLocation(name, minCustomer, maxCustomer, avgCookies){
   this.name = name;
@@ -33,6 +31,7 @@ MakeShopLocation.prototype.cookiesByHour = function() {
     totalCookiesByHour[i] += this.cookiesSoldPerHour[i];
     this.totalCookies += this.cookiesSoldPerHour[i];
   }
+  totalDailySales += this.totalCookies;
 };
 
 function makeStands() {
@@ -91,7 +90,6 @@ renderLocationRows();
 
 //Creating footer row
 function footer(){
-  //totalTotal = 0;
   cookieStands; // find cookieStands ID
   var tfootEl = document.createElement('tfoot'); // create tfoot element
   cookieStands.appendChild(tfootEl); // link the two = tfoot to table
@@ -103,6 +101,9 @@ function footer(){
     tdEl.textContent = totalCookiesByHour[i]; // add cookie sold by hour to cell
     tfootEl.appendChild(tdEl); // link the two - data cell to row
   }
+  tdEl = document.createElement('td'); // create a data cell
+  tdEl.textContent = totalDailySales; // add totalCookies amount to text content
+  tfootEl.appendChild(tdEl); // link the two - data cell to row
 }
 footer();
 
