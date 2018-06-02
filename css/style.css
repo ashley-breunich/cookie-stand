@@ -239,9 +239,58 @@ h4 {
     font-family: 'Source Sans Pro', sans-serif;
     margin-top: 20px;
     padding: 12px 17px 12px 17px;
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
     border: 2px solid #a84934;
 }
+
+#for-sale button:hover {
+    font-family: 'Source Sans Pro', sans-serif;
+    border: 2px solid #C98856;
+}
+
+#contact {
+    background-color: #e8b776;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+footer {
+    height: 130px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+ footer img {
+     width: 200px;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ footer p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+ }
+
+ h5 {
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    line-height: 22px;
+    text-align: center;
+ }
+
+ h5 a {
+     color: #a84934;
+ }
+
+ h5 a:hover {
+     color: #C98856;
+ }
