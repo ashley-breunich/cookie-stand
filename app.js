@@ -1,11 +1,12 @@
 'use strict';
 
-var hoursOfOperation = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
+var hoursOfOperation = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 
 var allLocations = [];
-var totalCookiesByHour = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+var totalCookiesByHour = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 var cookieStands = document.getElementById('cookiestands');
 var storeForm = document.getElementById('store-form');
+// var footerRow = document.getElementById('footer-row');
 var totalDailySales = 0;
 
 function MakeShopLocation(name, minCustomer, maxCustomer, avgCookies){
@@ -92,6 +93,7 @@ renderLocationRows();
 function footer(){
   cookieStands; // find cookieStands ID
   var tfootEl = document.createElement('tfoot'); // create tfoot element
+  // tfootEl.setAttribute('id', 'footer-row');
   cookieStands.appendChild(tfootEl); // link the two = tfoot to table
   var thEl = document.createElement('th'); // create header element
   thEl.textContent = 'Daily Total'; // add Daily Total text to the header element
@@ -117,6 +119,17 @@ function clearFields(event){
   event.target.avgcookie.value = null;
 }
 
+//clears table after form submit
+function clearTable(){
+  totalCookiesByHour = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+  totalDailySales = 0;
+  for(var i = 0; i < allLocations.length; i++){
+    allLocations[i].totalCookies = 0;
+  }
+  var remove = document.getElementById('cookiestands');
+  remove.innerHTML = '';
+}
+
 //REMINDER(DECLARED UP TOP) - var storeForm = document.getElementById('store-form');
 storeForm;
 function handleAdditionalStore(event) {
@@ -130,11 +143,27 @@ function handleAdditionalStore(event) {
   var newStoreMaxCustomer = parseInt(event.target.maxcustomer.value);
   var newStoreAvgCookie = parseInt(event.target.avgcookie.value);
 
-  var addNewStore = new MakeShopLocation(newStoreName, newStoreMinCustomer, newStoreMaxCustomer, newStoreAvgCookie);
+  new MakeShopLocation(newStoreName, newStoreMinCustomer, newStoreMaxCustomer, newStoreAvgCookie);
 
   clearFields(event);
 
-  addNewStore.renderRow();
+  clearTable();
+  header();
+  renderLocationRows();
+  footer();
 }
 
 storeForm.addEventListener('submit', handleAdditionalStore);
+
+
+// function clearTable(){
+//   for(var i = 0; i < locations.length; i++){
+//     locations[i].cookieArr = [];
+//   }
+//   var remove = document.getElementById('locations');
+//   remove.innerHTML = '';
+// }
+
+// form.addEventListener('submit', formData);
+// printSales();
+// footer();
