@@ -76,9 +76,9 @@ MakeShopLocation.prototype.renderRow = function(){
     tdEl.textContent = this.cookiesSoldPerHour[i]; // add cookie sold by hour to cell
     trEl.appendChild(tdEl); // link the two - data cell to row
   }
-  tdEl = document.createElement('td'); // create a data cell
-  tdEl.textContent = this.totalCookies; // add totalCookies amount to text content
-  trEl.appendChild(tdEl); // link the two - data cell to row
+  thEl = document.createElement('th'); // create a data cell
+  thEl.textContent = this.totalCookies; // add totalCookies amount to text content
+  trEl.appendChild(thEl); // link the two - data cell to row
 };
 
 // render all location rows
@@ -103,9 +103,9 @@ function footer(){
     tdEl.textContent = totalCookiesByHour[i]; // add cookie sold by hour to cell
     tfootEl.appendChild(tdEl); // link the two - data cell to row
   }
-  tdEl = document.createElement('td'); // create a data cell
-  tdEl.textContent = totalDailySales; // add totalCookies amount to text content
-  tfootEl.appendChild(tdEl); // link the two - data cell to row
+  thEl = document.createElement('th'); // create a data cell
+  thEl.textContent = totalDailySales; // add totalCookies amount to text content
+  tfootEl.appendChild(thEl); // link the two - data cell to row
 }
 footer();
 

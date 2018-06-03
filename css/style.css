@@ -1,13 +1,15 @@
 * {   
     margin-top: 10px;
     color: #364331;
+    background: #fafafa;
 }
 
 h2 {
-    font-family: 'Source Sans Pro', sans-serif;
+    color: #a84934;
+    font-family: 'Playfair Display', serif;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 2.5px;
+    letter-spacing: 2px;
     font-size: 22px;
     font-weight: 400;
     margin-bottom: 15px;
@@ -19,11 +21,11 @@ img.centered {
     margin-right: auto;
     margin-top: 15px;
     margin-bottom: 30px;
-    width: 350px;
+    width: 400px;
 }
 
 table {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     width: 90%;
     border-collapse: collapse;
     border: 2px solid #fafafa;
@@ -53,6 +55,7 @@ th, td {
 
  td {
     background-color: #e8b776;
+    color: #364331;
     text-align: center;
  }
 
@@ -66,7 +69,7 @@ th:first-child {
 }
 
 th:last-child {
-    width: 100px;
+    width: 110px;
 }
 
 fieldset {
@@ -176,26 +179,27 @@ main {
 }
 
 #aboutus {
-    padding-left: 150px;
-    padding-right: 150px;
-    padding-top: 60px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 80px;
 }
 
 h3 {
     color: #a84934;
     font-family: 'Playfair Display', serif;
     font-size: 42px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     text-transform: uppercase;
     letter-spacing: 3px;
     text-align: center;
 }
 
 #aboutus p {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #5e5e5e;
     font-size: 16px;
     line-height: 25px;
-    margin-bottom: 25px;
+    padding-bottom: 25px;
 }
 
 .fullsize img {
@@ -205,7 +209,7 @@ h3 {
 
 .float-left img {
     float: left;
-    width: 300px;
+    width: 370px;
     padding-right: 15px;
     padding-bottom: 10px;
 }
@@ -226,7 +230,7 @@ h4 {
     font-family: 'Playfair Display', serif;
     font-size: 28px;
     margin-bottom: 20px;
-    margin-top: 70px;
+    margin-top: 50px;
     text-transform: uppercase;
     letter-spacing: 3px;
     text-align: center;
@@ -248,9 +252,10 @@ h4 {
 }
 
 #for-sale ol li {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 20px;
-    line-height: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #5e5e5e;
+    font-size: 18px;
+    line-height: 32px;
 }
 
 #for-sale button {
@@ -274,6 +279,14 @@ h4 {
     padding-top: 80px;
     padding-bottom: 80px;
 }
+
+#contact-content {
+    background-color: #e8b776;
+}
+
+#contact h3 {
+    background-color: #e8b776;
+ }
 
 /* FOOTER STYLING */
 
@@ -304,9 +317,11 @@ footer h6 {
     letter-spacing: .3px;
     text-align: center;
     margin-top: 20px;
+    color: #5e5e5e;
  }
 
  h5 {
+    background-color: #e8b776;
     color: #fff;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 15px;
@@ -317,7 +332,8 @@ footer h6 {
  }
 
  h5 a {
-     color: #a84934;
+    background-color: #e8b776;
+    color: #a84934;
  }
 
  h5 a:hover {
