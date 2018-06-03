@@ -1,2 +1,5 @@
-# cookie-stand
-Salmon Cookies Project
+# Pat's Salmon Cookies Project
+
+The problem domain of this project was to create both a sales page and a public-facing page for Pat, who owns Pat's Salmon Cookies. The sales page should render a table through DOM manipulation that calculates the number of cookies needed for each location at each hour of the day, based on a random number function that generates the number of customers per hour. Pat should be able to add new stores to this table through a form and, based on the numbers he enters, get an idea of how many cookies he will need to have available for the day. 
+
+The public-facing page should include information on the company, hours of operation, contact details, specific photos provided by the client, and merchandise for purchase. The CSS should feature at least one Google font, one standard serif font, and one sans-serif font. There should be a background color on both pages. 

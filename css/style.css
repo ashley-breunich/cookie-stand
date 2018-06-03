@@ -1,14 +1,15 @@
 * {   
-    background-color: #fafafa;
     margin-top: 10px;
     color: #364331;
+    background: #fafafa;
 }
 
 h2 {
-    font-family: 'Source Sans Pro', sans-serif;
+    color: #a84934;
+    font-family: 'Playfair Display', serif;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 2.5px;
+    letter-spacing: 2px;
     font-size: 22px;
     font-weight: 400;
     margin-bottom: 15px;
@@ -20,11 +21,11 @@ img.centered {
     margin-right: auto;
     margin-top: 15px;
     margin-bottom: 30px;
-    width: 350px;
+    width: 400px;
 }
 
 table {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     width: 90%;
     border-collapse: collapse;
     border: 2px solid #fafafa;
@@ -54,6 +55,7 @@ th, td {
 
  td {
     background-color: #e8b776;
+    color: #364331;
     text-align: center;
  }
 
@@ -67,7 +69,7 @@ th:first-child {
 }
 
 th:last-child {
-    width: 100px;
+    width: 110px;
 }
 
 fieldset {
@@ -121,3 +123,219 @@ legend {
     font-family: 'Source Sans Pro', sans-serif;
     border: 2px solid #C98856;
 }
+
+/* PUBLIC-FACING PAGE */
+
+header {
+    height: 220px;
+    background-color: #fafafa;
+}
+
+nav {
+    width: 960px;
+    margin: auto;
+    padding-top: 20px;
+    background-color: #fafafa;
+}
+
+header img {
+    float: left;
+    margin-right: 120px;
+    width: 370px;
+}
+
+#floatnav {
+    margin-top: 120px;
+    float: right;
+}
+
+header ul li {
+    display: inline;
+    margin-right: 70px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:  13px;
+}
+
+a {
+    color: #C98856;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#a84934;
+}
+
+/* MAIN SECTION */
+
+main {
+    background: #fff;
+}
+
+.background img {
+    position: relative;
+    width: 100%;
+}
+
+#aboutus {
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 80px;
+}
+
+h3 {
+    color: #a84934;
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+#aboutus p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #5e5e5e;
+    font-size: 16px;
+    line-height: 25px;
+    padding-bottom: 25px;
+}
+
+.fullsize img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.float-left img {
+    float: left;
+    width: 370px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+
+#double-photo {
+    width: 600px;
+    margin: auto;
+}
+
+#aboutus ul li {
+    list-style: none;
+    float: left;
+    margin: 10px 15px 70px 0px;
+}
+
+h4 {
+    color: #a84934;
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+#merchandise {
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+#for-sale {
+    width: 600px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#for-sale img {
+    float: left;
+}
+
+#for-sale ol li {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #5e5e5e;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+#for-sale button {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 20px;
+    padding: 12px 17px 12px 17px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 2px solid #a84934;
+}
+
+#for-sale button:hover {
+    font-family: 'Source Sans Pro', sans-serif;
+    border: 2px solid #C98856;
+}
+
+#contact {
+    background-color: #e8b776;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#contact-content {
+    background-color: #e8b776;
+}
+
+#contact h3 {
+    background-color: #e8b776;
+ }
+
+/* FOOTER STYLING */
+
+footer {
+    height: 170px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+footer h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+ footer img {
+     width: 250px;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ footer p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12px;
+    letter-spacing: .3px;
+    text-align: center;
+    margin-top: 20px;
+    color: #5e5e5e;
+ }
+
+ h5 {
+    background-color: #e8b776;
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    line-height: 22px;
+    text-align: center;
+ }
+
+ h5 a {
+    background-color: #e8b776;
+    color: #a84934;
+ }
+
+ h5 a:hover {
+     color: #C98856;
+ }
